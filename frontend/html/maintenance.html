@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LocoAssets | Maintenance</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="app-container">
+        <!-- Sidebar -->
+        <nav class="sidebar">
+            <div class="sidebar-brand">LocoAssets</div>
+            <ul class="nav-menu">
+                <li><a href="dashboard.html">Dashboard</a></li>
+                <li><a href="assets.html">Assets</a></li>
+                <li><a href="employees.html">Employees</a></li>
+                <li><a href="vendors.html">Vendors</a></li>
+                <li><a href="maintenance.html" class="active">Maintenance</a></li>
+                <li><a href="audit.html">Audits</a></li>
+                <li><a href="reports.html">Reports</a></li>
+            </ul>
+        </nav>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <header class="topbar">
+                <h2>Maintenance Records</h2>
+                <div class="user-info">
+                    <span id="userName" style="font-weight: 500;">User</span>
+                    <button id="logoutBtn" class="btn btn-danger btn-small">Logout</button>
+                </div>
+            </header>
+
+            <div class="glass-panel">
+                <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1.5rem;">
+                    <h3>All Maintenance Logs</h3>
+                    <button class="btn btn-primary" onclick="openModal()">+ Log Maintenance</button>
+                </div>
+                
+                <div class="table-container">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>ID</th>
+                                <th>Asset Name</th>
+                                <th>Description</th>
+                                <th>Date</th>
+                                <th>Status</th>
+                                <th>Actions</th>
+                            </tr>
+                        </thead>
+                        <tbody id="maintenanceTableBody">
+                            <tr>
+                                <td>1</td>
+                                <td>Office Chair</td>
+                                <td>Wheel replacement</td>
+                                <td>2023-11-01</td>
+                                <td><span class="badge badge-maintenance">In Progress</span></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <!-- Log Maintenance Modal -->
+    <div class="modal-overlay" id="maintenanceModal">
+        <div class="glass-panel modal-content">
+            <div class="modal-header">
+                <h3>Log Maintenance</h3>
+                <button class="close-btn" onclick="closeModal()">&times;</button>
+            </div>
+            <form id="maintenanceForm">
+                <div class="input-group">
+                    <label>Select Asset</label>
+                    <select id="maintAssetSelect" required>
+                        <option value="">-- Choose an Asset --</option>
+                    </select>
+                </div>
+                <div class="input-group">
+                    <label>Issue Description</label>
+                    <input type="text" id="maintDesc" required maxlength="250" pattern=".*\S+.*" title="This field cannot be only blank spaces (max 250 characters)">
+                </div>
+                <div class="input-group">
+                    <label>Date Reported</label>
+                    <input type="date" id="maintDate" required>
+                </div>
+                <div style="display: flex; justify-content: flex-end; gap: 1rem; margin-top: 2rem;">
+                    <button type="button" class="btn" style="background: rgba(0,0,0,0.1);" onclick="closeModal()">Cancel</button>
+                    <button type="submit" class="btn btn-primary">Log Issue</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script src="../js/app.js"></script>
+    <script src="../js/maintenance.js"></script>
+</body>
+</html>

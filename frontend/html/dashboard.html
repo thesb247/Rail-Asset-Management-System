@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LocoAssets | Dashboard</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <div class="app-container">
+        <!-- Sidebar -->
+        <nav class="sidebar">
+            <div class="sidebar-brand">LocoAssets</div>
+            <ul class="nav-menu">
+                <li><a href="dashboard.html" class="active">Dashboard</a></li>
+                <li><a href="assets.html">Assets</a></li>
+                <li><a href="employees.html">Employees</a></li>
+                <li><a href="vendors.html">Vendors</a></li>
+                <li><a href="maintenance.html">Maintenance</a></li>
+                <li><a href="audit.html">Audits</a></li>
+                <li><a href="reports.html">Reports</a></li>
+            </ul>
+        </nav>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <header class="topbar">
+                <h2>Dashboard Overview</h2>
+                <div class="user-info">
+                    <span id="userName" style="font-weight: 500;">User</span>
+                    <button id="logoutBtn" class="btn btn-danger btn-small">Logout</button>
+                </div>
+            </header>
+
+            <div class="stat-grid">
+                <div class="glass-panel stat-card">
+                    <span class="stat-title">Total Assets</span>
+                    <span class="stat-value" id="totalAssetsCount">0</span>
+                </div>
+                <div class="glass-panel stat-card">
+                    <span class="stat-title">Assigned Assets</span>
+                    <span class="stat-value" id="assignedAssetsCount" style="color: var(--primary-color);">0</span>
+                </div>
+                <div class="glass-panel stat-card">
+                    <span class="stat-title">Available Assets</span>
+                    <span class="stat-value" id="availableAssetsCount" style="color: var(--success-color);">0</span>
+                </div>
+                <div class="glass-panel stat-card">
+                    <span class="stat-title">Under Maintenance</span>
+                    <span class="stat-value" id="maintenanceCount" style="color: var(--warning-color);">0</span>
+                </div>
+            </div>
+            
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; margin-top: 1.5rem;">
+                <div class="glass-panel">
+                    <h3>Asset Status Breakdown</h3>
+                    <canvas id="statusChart" style="margin-top: 1rem; max-height: 250px;"></canvas>
+                </div>
+                <div class="glass-panel">
+                    <h3>Assets by Category</h3>
+                    <canvas id="categoryChart" style="margin-top: 1rem; max-height: 250px;"></canvas>
+                </div>
+            </div>
+
+            <div class="glass-panel" style="margin-top: 1.5rem;">
+                <h3>Recent Audit Activity</h3>
+                <div class="table-container" style="margin-top: 1rem;">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Description</th>
+                                <th>Date</th>
+                                <th>Auditor</th>
+                            </tr>
+                        </thead>
+                        <tbody id="recentActivityList">
+                            <tr><td colspan="3" style="text-align:center;">Loading...</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="../js/app.js"></script>
+    <script src="../js/dashboard.js"></script>
+</body>
+</html>

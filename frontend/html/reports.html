@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LocoAssets | Reports</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="app-container">
+        <!-- Sidebar -->
+        <nav class="sidebar">
+            <div class="sidebar-brand">LocoAssets</div>
+            <ul class="nav-menu">
+                <li><a href="dashboard.html">Dashboard</a></li>
+                <li><a href="assets.html">Assets</a></li>
+                <li><a href="employees.html">Employees</a></li>
+                <li><a href="vendors.html">Vendors</a></li>
+                <li><a href="maintenance.html">Maintenance</a></li>
+                <li><a href="audit.html">Audits</a></li>
+                <li><a href="reports.html" class="active">Reports</a></li>
+            </ul>
+        </nav>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <header class="topbar">
+                <h2>System Reports</h2>
+                <div class="user-info">
+                    <span id="userName" style="font-weight: 500;">User</span>
+                    <button id="logoutBtn" class="btn btn-danger btn-small">Logout</button>
+                </div>
+            </header>
+
+            <div class="glass-panel">
+                <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1.5rem;">
+                    <h3>Available Reports</h3>
+                </div>
+                
+                <div class="table-container">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Report Name</th>
+                                <th>Description</th>
+                                <th>Action</th>
+                            </tr>
+                        </thead>
+                        <tbody id="reportsTableBody">
+                            <tr>
+                                <td><strong>Asset Summary</strong></td>
+                                <td>Complete list of all assets and their current status.</td>
+                                <td><button class="btn btn-primary btn-small" onclick="exportAssetsCSV()">Download CSV</button></td>
+                            </tr>
+                            <tr>
+                                <td><strong>Maintenance Log</strong></td>
+                                <td>Record of all maintenance activities.</td>
+                                <td><button class="btn btn-primary btn-small" onclick="exportMaintenanceCSV()">Download CSV</button></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="../js/app.js"></script>
+    <script src="../js/reports.js"></script>
+</body>
+</html>

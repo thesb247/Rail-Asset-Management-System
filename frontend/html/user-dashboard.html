@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LocoAssets | My Portal</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="app-layout">
+        <!-- Sidebar -->
+        <nav class="sidebar">
+            <div class="sidebar-brand">RailAssets</div>
+            <ul class="nav-menu">
+                <li><a href="user-dashboard.html" class="active">My Portal</a></li>
+            </ul>
+        </nav>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <header class="topbar">
+                <h2>My Portal</h2>
+                <div class="user-info">
+                    <span id="userName" style="font-weight: 500;">User</span>
+                    <button id="logoutBtn" class="btn btn-danger btn-small">Logout</button>
+                </div>
+            </header>
+
+            <!-- Profile Section -->
+            <div class="glass-panel" style="margin-bottom: 2rem;">
+                <h3 style="margin-bottom: 1.5rem; border-bottom: 1px solid #eee; padding-bottom: 0.5rem;">My Profile Details</h3>
+                <div id="profileDetails" style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem;">
+                    <p>Loading profile...</p>
+                </div>
+            </div>
+
+            <!-- Assets Section -->
+            <div class="glass-panel">
+                <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1.5rem;">
+                    <h3>My Assigned Assets</h3>
+                </div>
+                
+                <div class="table-container">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>ID</th>
+                                <th>Name</th>
+                                <th>Category</th>
+                                <th>Status</th>
+                                <th>Purchase Date</th>
+                                <th>Warranty Expiry</th>
+                                <th>Actions</th>
+                            </tr>
+                        </thead>
+                        <tbody id="userAssetsTableBody">
+                            <tr><td colspan="7" style="text-align: center;">Loading assets...</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <!-- Report Issue Modal -->
+            <div class="modal" id="reportIssueModal">
+                <div class="modal-content">
+                    <span class="close-btn" onclick="closeReportIssueModal()">&times;</span>
+                    <h3 style="margin-bottom: 20px;">Report an Issue</h3>
+                    <form id="reportIssueForm">
+                        <input type="hidden" id="reportAssetId">
+                        <div class="input-group">
+                            <label>Issue Description</label>
+                            <textarea id="reportDesc" required rows="4" placeholder="Describe the problem..."></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary" style="width: 100%;">Submit Report</button>
+                    </form>
+                </div>
+            </div>
+
+        </main>
+    </div>
+
+    <script src="../js/app.js"></script>
+    <script src="../js/user-dashboard.js"></script>
+</body>
+</html>

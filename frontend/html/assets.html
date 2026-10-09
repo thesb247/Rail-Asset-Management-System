@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LocoAssets | Assets</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="app-container">
+        <!-- Sidebar -->
+        <nav class="sidebar">
+            <div class="sidebar-brand">LocoAssets</div>
+            <ul class="nav-menu">
+                <li><a href="dashboard.html">Dashboard</a></li>
+                <li><a href="assets.html" class="active">Assets</a></li>
+                <li><a href="employees.html">Employees</a></li>
+                <li><a href="vendors.html">Vendors</a></li>
+                <li><a href="maintenance.html">Maintenance</a></li>
+                <li><a href="audit.html">Audits</a></li>
+                <li><a href="reports.html">Reports</a></li>
+            </ul>
+        </nav>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <header class="topbar">
+                <h2>Asset Directory</h2>
+                <div class="user-info">
+                    <span id="userName" style="font-weight: 500;">User</span>
+                    <button id="logoutBtn" class="btn btn-danger btn-small">Logout</button>
+                </div>
+            </header>
+
+            <div class="glass-panel">
+                <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1.5rem;">
+                    <h3>All Assets</h3>
+                    <div style="display: flex; gap: 1rem; align-items: center;">
+                        <input type="text" id="assetSearch" placeholder="Search assets..." style="padding: 0.5rem; border: 1px solid #ccc; border-radius: 4px;">
+                        <select id="assetFilter" style="padding: 0.5rem; border: 1px solid #ccc; border-radius: 4px;">
+                            <option value="All">All Categories</option>
+                            <option value="Electronics">Electronics</option>
+                            <option value="Furniture">Furniture</option>
+                            <option value="Vehicles">Vehicles</option>
+                        </select>
+                        <button class="btn btn-primary" onclick="openModal()">+ Add Asset</button>
+                    </div>
+                </div>
+                
+                <div class="table-container">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>ID</th>
+                                <th>Name</th>
+                                <th>Category</th>
+                                <th>Status</th>
+                                <th>Assigned To</th>
+                                <th>Purchase Date</th>
+                                <th>Price</th>
+                                <th>Warranty</th>
+                                <th>Actions</th>
+                            </tr>
+                        </thead>
+                        <tbody id="assetsTableBody">
+                            <!-- Dynamic Content -->
+                        </tbody>
+                    </table>
+                </div>
+                
+                <div class="pagination">
+                    <button id="prevPage" class="pagination-btn" onclick="changePage(-1)" disabled>Previous</button>
+                    <span id="pageInfo">Page 1 of 1</span>
+                    <button id="nextPage" class="pagination-btn" onclick="changePage(1)" disabled>Next</button>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <!-- Add Asset Modal -->
+    <div class="modal-overlay" id="assetModal">
+        <div class="glass-panel modal-content">
+            <div class="modal-header">
+                <h3>Add New Asset</h3>
+                <button class="close-btn" onclick="closeModal()">&times;</button>
+            </div>
+            <form id="assetForm">
+                <div class="input-group">
+                    <label>Asset Name</label>
+                    <input type="text" id="assetName" required maxlength="100" pattern=".*\S+.*" title="This field cannot be only blank spaces (max 100 characters)">
+                </div>
+                <div class="input-group">
+                    <label>Category</label>
+                    <select id="assetCategory" required>
+                        <option value="Electronics">Electronics</option>
+                        <option value="Mobile Devices">Mobile Devices</option>
+                        <option value="Network Equipment">Network Equipment</option>
+                        <option value="Software">Software</option>
+                        <option value="Furniture">Furniture</option>
+                        <option value="Office Supplies">Office Supplies</option>
+                        <option value="Machinery">Machinery & Equipment</option>
+                        <option value="Vehicle">Vehicle</option>
+                        <option value="Real Estate">Real Estate</option>
+                    </select>
+                </div>
+                <div class="input-group">
+                    <label>Status</label>
+                    <select id="assetStatus" required>
+                        <option value="Active">Active</option>
+                        <option value="Maintenance">Maintenance</option>
+                        <option value="Retired">Retired</option>
+                    </select>
+                </div>
+                <div class="input-group">
+                    <label>Assigned To</label>
+                    <select id="assetAssignedTo">
+                        <option value="Unassigned">Unassigned</option>
+                    </select>
+                </div>
+                <div class="input-group">
+                    <label>Purchase Date</label>
+                    <input type="date" id="assetPurchaseDate" required>
+                </div>
+                <div class="input-group">
+                    <label>Purchase Price (₹)</label>
+                    <input type="number" id="assetPrice" min="0" step="0.01" required placeholder="0.00" title="Price cannot be negative">
+                </div>
+                <div class="input-group">
+                    <label>Warranty Expiry Date</label>
+                    <input type="date" id="assetWarranty" required title="Warranty expiry must be a future date">
+                </div>
+                <div style="display: flex; justify-content: flex-end; gap: 1rem; margin-top: 2rem;">
+                    <button type="button" class="btn" style="background: rgba(255,255,255,0.1); color: white;" onclick="closeModal()">Cancel</button>
+                    <button type="submit" class="btn btn-primary">Save Asset</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- QR Code Modal -->
+    <div class="modal-overlay" id="qrModal">
+        <div class="glass-panel modal-content" style="max-width: 350px; text-align: center;">
+            <div class="modal-header">
+                <h3>Asset QR Code</h3>
+                <button class="close-btn" onclick="closeQRModal()">&times;</button>
+            </div>
+            <div id="qrImageContainer" style="padding: 2rem 0; min-height: 200px; display: flex; justify-content: center; align-items: center;">
+                <p>Generating...</p>
+            </div>
+            <button class="btn btn-primary" onclick="closeQRModal()" style="width: 100%;">Close</button>
+        </div>
+    </div>
+
+    <!-- Report Issue Modal -->
+    <div class="modal" id="reportIssueModal">
+        <div class="modal-content">
+            <span class="close-btn" onclick="closeReportIssueModal()">&times;</span>
+            <h3 style="margin-bottom: 20px;">Report an Issue</h3>
+            <form id="reportIssueForm">
+                <input type="hidden" id="reportAssetId">
+                <div class="input-group">
+                    <label>Issue Description</label>
+                    <textarea id="reportDesc" required rows="4" placeholder="Describe the problem..."></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary" style="width: 100%;">Submit Report</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="../js/app.js"></script>
+    <script src="../js/assets.js"></script>
+</body>
+</html>

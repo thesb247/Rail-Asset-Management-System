@@ -1,0 +1,763 @@
+{
+  "assets": [
+    {
+      "id": 201,
+      "name": "Dell Latitude 5440 Laptop",
+      "category": "Electronics",
+      "status": "Available",
+      "assignedTo": "Unassigned",
+      "purchaseDate": "2025-01-15",
+      "price": 72000,
+      "warranty": "2028-01-15"
+    },
+    {
+      "id": 202,
+      "name": "Samsung Galaxy S24",
+      "category": "Mobile Devices",
+      "status": "Under Repair",
+      "assignedTo": "Unassigned",
+      "purchaseDate": "2025-02-10",
+      "price": 68000,
+      "warranty": "2027-02-10"
+    },
+    {
+      "id": 203,
+      "name": "Cisco Catalyst 9200 Switch",
+      "category": "Network Equipment",
+      "status": "Available",
+      "assignedTo": "Unassigned",
+      "purchaseDate": "2025-03-05",
+      "price": 115000,
+      "warranty": "2030-03-05"
+    },
+    {
+      "id": 204,
+      "name": "Microsoft Office 2021 License",
+      "category": "Software",
+      "status": "Available",
+      "assignedTo": "Unassigned",
+      "purchaseDate": "2025-01-20",
+      "price": 12500,
+      "warranty": "2035-01-20"
+    },
+    {
+      "id": 205,
+      "name": "Ergonomic Office Chair",
+      "category": "Furniture",
+      "status": "Available",
+      "assignedTo": "Unassigned",
+      "purchaseDate": "2024-12-12",
+      "price": 9500,
+      "warranty": "2027-12-12"
+    },
+    {
+      "id": 206,
+      "name": "Executive Wooden Desk",
+      "category": "Furniture",
+      "status": "Available",
+      "assignedTo": "Unassigned",
+      "purchaseDate": "2024-11-18",
+      "price": 18000,
+      "warranty": "2029-11-18"
+    },
+    {
+      "id": 207,
+      "name": "HP LaserJet Pro Printer",
+      "category": "Electronics",
+      "status": "Available",
+      "assignedTo": "Unassigned",
+      "purchaseDate": "2025-02-28",
+      "price": 24000,
+      "warranty": "2027-02-28"
+    },
+    {
+      "id": 208,
+      "name": "A4 Copier Paper (500 Sheets)",
+      "category": "Office Supplies",
+      "status": "Available",
+      "assignedTo": "Unassigned",
+      "purchaseDate": "2025-06-02",
+      "price": 350,
+      "warranty": "2025-06-02"
+    },
+    {
+      "id": 209,
+      "name": "Heavy Duty Drill Machine",
+      "category": "Machinery & Equipment",
+      "status": "Available",
+      "assignedTo": "Unassigned",
+      "purchaseDate": "2024-10-16",
+      "price": 32000,
+      "warranty": "2026-10-16"
+    },
+    {
+      "id": 210,
+      "name": "Toyota Innova Crysta",
+      "category": "Vehicle",
+      "status": "Available",
+      "assignedTo": "Unassigned",
+      "purchaseDate": "2023-08-25",
+      "price": 2250000,
+      "warranty": "2028-08-25"
+    },
+    {
+      "id": 211,
+      "name": "Lenovo ThinkPad E16",
+      "category": "Electronics",
+      "status": "Available",
+      "assignedTo": "Unassigned",
+      "purchaseDate": "2025-04-14",
+      "price": 78500,
+      "warranty": "2028-04-14"
+    },
+    {
+      "id": 212,
+      "name": "Apple iPad Air (M2)",
+      "category": "Mobile Devices",
+      "status": "Available",
+      "assignedTo": "Unassigned",
+      "purchaseDate": "2025-05-30",
+      "price": 59900,
+      "warranty": "2026-05-30"
+    },
+    {
+      "id": 213,
+      "name": "Fortinet FortiGate 60F Firewall",
+      "category": "Network Equipment",
+      "status": "Available",
+      "assignedTo": "Unassigned",
+      "purchaseDate": "2024-09-09",
+      "price": 78000,
+      "warranty": "2027-09-09"
+    },
+    {
+      "id": 214,
+      "name": "Adobe Creative Cloud License",
+      "category": "Software",
+      "status": "Available",
+      "assignedTo": "Unassigned",
+      "purchaseDate": "2025-04-01",
+      "price": 56000,
+      "warranty": "2026-04-01"
+    },
+    {
+      "id": 215,
+      "name": "Conference Room Projector",
+      "category": "Electronics",
+      "status": "Available",
+      "assignedTo": "Unassigned",
+      "purchaseDate": "2025-01-17",
+      "price": 48000,
+      "warranty": "2027-01-17"
+    },
+    {
+      "id": 216,
+      "name": "Whiteboard with Stand",
+      "category": "Office Supplies",
+      "status": "Available",
+      "assignedTo": "Unassigned",
+      "purchaseDate": "2025-02-08",
+      "price": 6500,
+      "warranty": "2026-02-08"
+    },
+    {
+      "id": 217,
+      "name": "CNC Cutting Machine",
+      "category": "Machinery & Equipment",
+      "status": "Available",
+      "assignedTo": "Unassigned",
+      "purchaseDate": "2023-07-15",
+      "price": 480000,
+      "warranty": "2028-07-15"
+    },
+    {
+      "id": 218,
+      "name": "Hyundai Creta",
+      "category": "Vehicle",
+      "status": "Available",
+      "assignedTo": "Unassigned",
+      "purchaseDate": "2023-12-22",
+      "price": 1680000,
+      "warranty": "2026-12-22"
+    },
+    {
+      "id": 219,
+      "name": "Corporate Office Building",
+      "category": "Real Estate",
+      "status": "Available",
+      "assignedTo": "Unassigned",
+      "purchaseDate": "2020-04-01",
+      "price": 52500000,
+      "warranty": "2050-04-01"
+    },
+    {
+      "id": 220,
+      "name": "Dell UltraSharp 27 Monitor",
+      "category": "Electronics",
+      "status": "Available",
+      "assignedTo": "Unassigned",
+      "purchaseDate": "2025-06-11",
+      "price": 32500,
+      "warranty": "2028-06-11"
+    }
+  ],
+  "employees": [
+    {
+      "id": 101,
+      "name": "Aarav Sharma",
+      "email": "aarav.sharma@gmail.com",
+      "phone": "9876543210",
+      "department": "IT",
+      "role": "user"
+    },
+    {
+      "id": 102,
+      "name": "Priya Verma",
+      "email": "priya.verma@gmail.com",
+      "phone": "9876543211",
+      "department": "HR",
+      "role": "user"
+    },
+    {
+      "id": 103,
+      "name": "Rahul Das",
+      "email": "rahul.das@gmail.com",
+      "phone": "9876543212",
+      "department": "Finance",
+      "role": "user"
+    },
+    {
+      "id": 104,
+      "name": "Sneha Patnaik",
+      "email": "sneha.patnaik@outlook.com",
+      "phone": "9876543213",
+      "department": "Marketing",
+      "role": "user"
+    },
+    {
+      "id": 105,
+      "name": "Vivek Mishra",
+      "email": "vivek.mishra@yahoo.com",
+      "phone": "9876543214",
+      "department": "Sales",
+      "role": "user"
+    },
+    {
+      "id": 106,
+      "name": "Neha Singh",
+      "email": "neha.singh@gmail.com",
+      "phone": "9876543215",
+      "department": "Operations",
+      "role": "user"
+    },
+    {
+      "id": 107,
+      "name": "Karan Patel",
+      "email": "karan.patel@gmail.com",
+      "phone": "9876543216",
+      "department": "IT",
+      "role": "user"
+    },
+    {
+      "id": 108,
+      "name": "Ananya Roy",
+      "email": "ananya.roy@gmail.com",
+      "phone": "9876543217",
+      "department": "HR",
+      "role": "user"
+    },
+    {
+      "id": 109,
+      "name": "Rohit Kumar",
+      "email": "rohit.kumar@gmail.com",
+      "phone": "9876543218",
+      "department": "Finance",
+      "role": "user"
+    },
+    {
+      "id": 110,
+      "name": "Pooja Nair",
+      "email": "pooja.nair@yahoo.com",
+      "phone": "9876543219",
+      "department": "Marketing",
+      "role": "user"
+    },
+    {
+      "id": 111,
+      "name": "Aditya Joshi",
+      "email": "aditya.joshi@outlook.com",
+      "phone": "9876543220",
+      "department": "Sales",
+      "role": "user"
+    },
+    {
+      "id": 112,
+      "name": "Kavya Reddy",
+      "email": "kavya.reddy@outlook.com",
+      "phone": "9876543221",
+      "department": "Operations",
+      "role": "user"
+    },
+    {
+      "id": 113,
+      "name": "Sandeep Mohanty",
+      "email": "sandeep.mohanty@outlook.com",
+      "phone": "9876543222",
+      "department": "IT",
+      "role": "user"
+    },
+    {
+      "id": 114,
+      "name": "Riya Gupta",
+      "email": "riya.gupta@yahoo.com",
+      "phone": "9876543223",
+      "department": "HR",
+      "role": "user"
+    },
+    {
+      "id": 115,
+      "name": "Manish Yadav",
+      "email": "manish.yadav@outlook.com",
+      "phone": "9876543224",
+      "department": "Finance",
+      "role": "user"
+    },
+    {
+      "id": 116,
+      "name": "Ishita Bose",
+      "email": "ishita.bose@gmail.com",
+      "phone": "9876543225",
+      "department": "Marketing",
+      "role": "user"
+    },
+    {
+      "id": 117,
+      "name": "Akash Sahoo",
+      "email": "akash.sahoo@gmail.com",
+      "phone": "9876543226",
+      "department": "Sales",
+      "role": "user"
+    },
+    {
+      "id": 118,
+      "name": "Meera Iyer",
+      "email": "meera.iyer@gmail.com",
+      "phone": "9876543227",
+      "department": "Operations",
+      "role": "user"
+    },
+    {
+      "id": 119,
+      "name": "Nikhil Jain",
+      "email": "nikhil.jain@outlook.com",
+      "phone": "9876543228",
+      "department": "IT",
+      "role": "user"
+    },
+    {
+      "id": 120,
+      "name": "Shreya Kulkarni",
+      "email": "shreya.kulkarni@outlook.com",
+      "phone": "9876543229",
+      "department": "HR",
+      "role": "user"
+    },
+    {
+      "id": 121,
+      "name": "Durga Prasad Maharana",
+      "email": "dpm@gmail.com",
+      "phone": "8273847193",
+      "department": "Finance",
+      "role": "User"
+    },
+    {
+      "id": 122,
+      "name": "Swapnesh",
+      "email": "swapnesh@example.com",
+      "phone": "9856471230",
+      "department": "IT",
+      "role": "User"
+    }
+  ],
+  "audits": [
+    {
+      "id": 1,
+      "description": "Asset samsung galaxy s24 sent for repair.",
+      "date": "2026-07-02",
+      "status": "Logged",
+      "auditor": "System"
+    },
+    {
+      "id": 2,
+      "description": "Maintenance 1 completed.",
+      "date": "2026-07-02",
+      "status": "Logged",
+      "auditor": "System"
+    },
+    {
+      "id": 3,
+      "description": "Asset samsung galaxy s21fe sent for repair.",
+      "date": "2026-07-02",
+      "status": "Logged",
+      "auditor": "System"
+    },
+    {
+      "id": 4,
+      "description": "Maintenance record 2 was deleted.",
+      "date": "2026-07-02",
+      "status": "Logged",
+      "auditor": "System"
+    },
+    {
+      "id": 5,
+      "description": "Maintenance record 1 was deleted.",
+      "date": "2026-07-02",
+      "status": "Logged",
+      "auditor": "System"
+    },
+    {
+      "id": 6,
+      "description": "Maintenance logged for Asset 202.",
+      "date": "2026-07-04",
+      "status": "Logged",
+      "auditor": "System"
+    },
+    {
+      "id": 7,
+      "description": "Employee 'Durga Prasad Maharana' was added.",
+      "date": "2026-07-04",
+      "status": "Logged",
+      "auditor": "System"
+    },
+    {
+      "id": 8,
+      "description": "Employee 'Swapnesh' was added.",
+      "date": "2026-08-06",
+      "status": "Logged",
+      "auditor": "System"
+    }
+  ],
+  "vendors": [
+    {
+      "id": 301,
+      "name": "TechNova Solutions",
+      "contactPerson": "Amit Sharma",
+      "email": "amit.sharma@gmail.com",
+      "phone": "9876543210"
+    },
+    {
+      "id": 302,
+      "name": "Elite IT Supplies",
+      "contactPerson": "Priya Verma",
+      "email": "priya.verma@outlook.com",
+      "phone": "9876543211"
+    },
+    {
+      "id": 303,
+      "name": "Global Office Mart",
+      "contactPerson": "Rahul Das",
+      "email": "rahul.das@gmail.com",
+      "phone": "9876543212"
+    },
+    {
+      "id": 304,
+      "name": "Prime Electronics",
+      "contactPerson": "Sneha Patnaik",
+      "email": "sneha.patnaik@outlook.com",
+      "phone": "9876543213"
+    },
+    {
+      "id": 305,
+      "name": "SecureNet Systems",
+      "contactPerson": "Vivek Mishra",
+      "email": "vivek.mishra@gmail.com",
+      "phone": "9876543214"
+    },
+    {
+      "id": 306,
+      "name": "SmartTech Distributors",
+      "contactPerson": "Neha Singh",
+      "email": "neha.singh@outlook.com",
+      "phone": "9876543215"
+    },
+    {
+      "id": 307,
+      "name": "Office Essentials India",
+      "contactPerson": "Karan Patel",
+      "email": "karan.patel@gmail.com",
+      "phone": "9876543216"
+    },
+    {
+      "id": 308,
+      "name": "Digital World Enterprises",
+      "contactPerson": "Ananya Roy",
+      "email": "ananya.roy@outlook.com",
+      "phone": "9876543217"
+    },
+    {
+      "id": 309,
+      "name": "Vertex Technologies",
+      "contactPerson": "Rohit Kumar",
+      "email": "rohit.kumar@gmail.com",
+      "phone": "9876543218"
+    },
+    {
+      "id": 310,
+      "name": "NextGen Hardware",
+      "contactPerson": "Pooja Nair",
+      "email": "pooja.nair@outlook.com",
+      "phone": "9876543219"
+    },
+    {
+      "id": 311,
+      "name": "BluePeak Solutions",
+      "contactPerson": "Aditya Joshi",
+      "email": "aditya.joshi@gmail.com",
+      "phone": "9876543220"
+    },
+    {
+      "id": 312,
+      "name": "Infinity Office Supplies",
+      "contactPerson": "Kavya Reddy",
+      "email": "kavya.reddy@outlook.com",
+      "phone": "9876543221"
+    },
+    {
+      "id": 313,
+      "name": "Zenith Equipments",
+      "contactPerson": "Sandeep Mohanty",
+      "email": "sandeep.mohanty@gmail.com",
+      "phone": "9876543222"
+    },
+    {
+      "id": 314,
+      "name": "Metro Business Systems",
+      "contactPerson": "Riya Gupta",
+      "email": "riya.gupta@outlook.com",
+      "phone": "9876543223"
+    },
+    {
+      "id": 315,
+      "name": "Fusion Technologies",
+      "contactPerson": "Manish Yadav",
+      "email": "manish.yadav@gmail.com",
+      "phone": "9876543224"
+    },
+    {
+      "id": 316,
+      "name": "Apex Industrial Supplies",
+      "contactPerson": "Ishita Bose",
+      "email": "ishita.bose@outlook.com",
+      "phone": "9876543225"
+    },
+    {
+      "id": 317,
+      "name": "Innovatech Solutions",
+      "contactPerson": "Akash Sahoo",
+      "email": "akash.sahoo@gmail.com",
+      "phone": "9876543226"
+    },
+    {
+      "id": 318,
+      "name": "Alpha Office Products",
+      "contactPerson": "Meera Iyer",
+      "email": "meera.iyer@outlook.com",
+      "phone": "9876543227"
+    },
+    {
+      "id": 319,
+      "name": "Reliable Asset Suppliers",
+      "contactPerson": "Nikhil Jain",
+      "email": "nikhil.jain@gmail.com",
+      "phone": "9876543228"
+    },
+    {
+      "id": 320,
+      "name": "FutureLink Technologies",
+      "contactPerson": "Shreya Kulkarni",
+      "email": "shreya.kulkarni@outlook.com",
+      "phone": "9876543229"
+    }
+  ],
+  "maintenance": [
+    {
+      "id": 1,
+      "assetId": 202,
+      "assetName": "Samsung Galaxy S24",
+      "description": "Screen Damages",
+      "date": "2026-02-12",
+      "status": "In Progress",
+      "cost": 0
+    }
+  ],
+  "users": [
+    {
+      "id": 1,
+      "name": "admin",
+      "email": "admin@system.com",
+      "password": "$2b$10$s4Zs//Q51PULN2zFq.THRuiG8nGM0X0lBZTwIuHVp5q4ESWHYhcFC",
+      "role": "admin"
+    },
+    {
+      "id": 2,
+      "name": "user",
+      "email": "user@system.com",
+      "password": "$2b$10$BOOT.LFaaLmnsxAOy1ELSuKq317HryQKw.zF3syjBY88v3bWqYK9a",
+      "role": "user"
+    },
+    {
+      "id": 101,
+      "name": "Aarav Sharma",
+      "email": "aarav.sharma@gmail.com",
+      "password": "$2b$10$RKEo1MvO.tLYcwSfxsujLOZnyQGpptnLO9lXBIl5ENAEExIL/XGqa",
+      "role": "user"
+    },
+    {
+      "id": 102,
+      "name": "Priya Verma",
+      "email": "priya.verma@gmail.com",
+      "password": "$2b$10$RKEo1MvO.tLYcwSfxsujLOZnyQGpptnLO9lXBIl5ENAEExIL/XGqa",
+      "role": "user"
+    },
+    {
+      "id": 103,
+      "name": "Rahul Das",
+      "email": "rahul.das@gmail.com",
+      "password": "$2b$10$RKEo1MvO.tLYcwSfxsujLOZnyQGpptnLO9lXBIl5ENAEExIL/XGqa",
+      "role": "user"
+    },
+    {
+      "id": 104,
+      "name": "Sneha Patnaik",
+      "email": "sneha.patnaik@outlook.com",
+      "password": "$2b$10$RKEo1MvO.tLYcwSfxsujLOZnyQGpptnLO9lXBIl5ENAEExIL/XGqa",
+      "role": "user"
+    },
+    {
+      "id": 105,
+      "name": "Vivek Mishra",
+      "email": "vivek.mishra@yahoo.com",
+      "password": "$2b$10$RKEo1MvO.tLYcwSfxsujLOZnyQGpptnLO9lXBIl5ENAEExIL/XGqa",
+      "role": "user"
+    },
+    {
+      "id": 106,
+      "name": "Neha Singh",
+      "email": "neha.singh@gmail.com",
+      "password": "$2b$10$RKEo1MvO.tLYcwSfxsujLOZnyQGpptnLO9lXBIl5ENAEExIL/XGqa",
+      "role": "user"
+    },
+    {
+      "id": 107,
+      "name": "Karan Patel",
+      "email": "karan.patel@gmail.com",
+      "password": "$2b$10$RKEo1MvO.tLYcwSfxsujLOZnyQGpptnLO9lXBIl5ENAEExIL/XGqa",
+      "role": "user"
+    },
+    {
+      "id": 108,
+      "name": "Ananya Roy",
+      "email": "ananya.roy@gmail.com",
+      "password": "$2b$10$RKEo1MvO.tLYcwSfxsujLOZnyQGpptnLO9lXBIl5ENAEExIL/XGqa",
+      "role": "user"
+    },
+    {
+      "id": 109,
+      "name": "Rohit Kumar",
+      "email": "rohit.kumar@gmail.com",
+      "password": "$2b$10$RKEo1MvO.tLYcwSfxsujLOZnyQGpptnLO9lXBIl5ENAEExIL/XGqa",
+      "role": "user"
+    },
+    {
+      "id": 110,
+      "name": "Pooja Nair",
+      "email": "pooja.nair@yahoo.com",
+      "password": "$2b$10$RKEo1MvO.tLYcwSfxsujLOZnyQGpptnLO9lXBIl5ENAEExIL/XGqa",
+      "role": "user"
+    },
+    {
+      "id": 111,
+      "name": "Aditya Joshi",
+      "email": "aditya.joshi@outlook.com",
+      "password": "$2b$10$RKEo1MvO.tLYcwSfxsujLOZnyQGpptnLO9lXBIl5ENAEExIL/XGqa",
+      "role": "user"
+    },
+    {
+      "id": 112,
+      "name": "Kavya Reddy",
+      "email": "kavya.reddy@outlook.com",
+      "password": "$2b$10$RKEo1MvO.tLYcwSfxsujLOZnyQGpptnLO9lXBIl5ENAEExIL/XGqa",
+      "role": "user"
+    },
+    {
+      "id": 113,
+      "name": "Sandeep Mohanty",
+      "email": "sandeep.mohanty@outlook.com",
+      "password": "$2b$10$RKEo1MvO.tLYcwSfxsujLOZnyQGpptnLO9lXBIl5ENAEExIL/XGqa",
+      "role": "user"
+    },
+    {
+      "id": 114,
+      "name": "Riya Gupta",
+      "email": "riya.gupta@yahoo.com",
+      "password": "$2b$10$RKEo1MvO.tLYcwSfxsujLOZnyQGpptnLO9lXBIl5ENAEExIL/XGqa",
+      "role": "user"
+    },
+    {
+      "id": 115,
+      "name": "Manish Yadav",
+      "email": "manish.yadav@outlook.com",
+      "password": "$2b$10$RKEo1MvO.tLYcwSfxsujLOZnyQGpptnLO9lXBIl5ENAEExIL/XGqa",
+      "role": "user"
+    },
+    {
+      "id": 116,
+      "name": "Ishita Bose",
+      "email": "ishita.bose@gmail.com",
+      "password": "$2b$10$RKEo1MvO.tLYcwSfxsujLOZnyQGpptnLO9lXBIl5ENAEExIL/XGqa",
+      "role": "user"
+    },
+    {
+      "id": 117,
+      "name": "Akash Sahoo",
+      "email": "akash.sahoo@gmail.com",
+      "password": "$2b$10$RKEo1MvO.tLYcwSfxsujLOZnyQGpptnLO9lXBIl5ENAEExIL/XGqa",
+      "role": "user"
+    },
+    {
+      "id": 118,
+      "name": "Meera Iyer",
+      "email": "meera.iyer@gmail.com",
+      "password": "$2b$10$RKEo1MvO.tLYcwSfxsujLOZnyQGpptnLO9lXBIl5ENAEExIL/XGqa",
+      "role": "user"
+    },
+    {
+      "id": 119,
+      "name": "Nikhil Jain",
+      "email": "nikhil.jain@outlook.com",
+      "password": "$2b$10$RKEo1MvO.tLYcwSfxsujLOZnyQGpptnLO9lXBIl5ENAEExIL/XGqa",
+      "role": "user"
+    },
+    {
+      "id": 120,
+      "name": "Shreya Kulkarni",
+      "email": "shreya.kulkarni@outlook.com",
+      "password": "$2b$10$RKEo1MvO.tLYcwSfxsujLOZnyQGpptnLO9lXBIl5ENAEExIL/XGqa",
+      "role": "user"
+    },
+    {
+      "id": 121,
+      "name": "Durga Prasad Maharana",
+      "email": "dpm@gmail.com",
+      "password": "$2b$10$am/ETm4v5MAoGiFjVMsydOENQFtaouGoArS2t5csBEMiIRbu.45xm",
+      "role": "user"
+    },
+    {
+      "id": 122,
+      "name": "Swapnesh",
+      "email": "swapnesh@example.com",
+      "password": "$2b$10$V2rQLqUFqG34GqL1dE5DmOSzYsa1ZPmz5GgcbC3s0W4Jdt8t9OaPW",
+      "role": "user"
+    }
+  ]
+}
